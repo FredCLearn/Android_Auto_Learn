@@ -12,6 +12,11 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //create object from class so we can use in main activity
+    private DataBook mDataBook= new DataBook();
+
+    //Declare View Variables
     private TextView mTextViewTop;
     private TextView mTextViewBottom;
     private Button mActionButton;
@@ -35,14 +40,10 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String[] person ={"Rimple", "Ben", "Eric", "Amel","Jeff","Kevin??"};
+                String person = mDataBook.getfact();
 
-                //button clicked, do action
-                Random randomNumber1 = new Random();
-                int randomNumber = randomNumber1.nextInt(person.length);
-                mTextViewBottom.setText(person[randomNumber]);
+                mTextViewBottom.setText(person);
                 mRelativeLayout.setBackgroundColor(Color.RED);
-
             }
         };
 

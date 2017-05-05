@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     //Declare View Variables
     private TextView mTextViewTop;
     private TextView mTextViewBottom;
+    private TextView mTextViewBottom2;
     private Button mActionButton;
     private Button mResetButton;
     private RelativeLayout mRelativeLayout;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         mTextViewTop =  (TextView) findViewById(R.id.textViewTop);
         mTextViewBottom = (TextView) findViewById(R.id.textViewBottom);
+        mTextViewBottom2 = (TextView) findViewById(R.id.textView3);
         mActionButton = (Button) findViewById(R.id.actionButton);
         mResetButton = (Button) findViewById(R.id.resetButton);
         mRelativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
@@ -44,14 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
                 mTextViewBottom.setText(person);
                 mRelativeLayout.setBackgroundColor(Color.RED);
+                mTextViewBottom2.setText("is the Best of the Best!!");
             }
         };
 
         View.OnClickListener listener2 = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mTextViewBottom.setText("Rimple, Ben, Eric, Amel,Jeff OR Kevin??");
-                mRelativeLayout.setBackgroundColor(Color.GREEN);
+                mTextViewBottom.setText("Rimple, Antoine, Unnati, Monika, OR Ankit??");
+                mRelativeLayout.setBackgroundColor(Color.BLACK);
+                mTextViewBottom2.setText("");
             }
         };
 

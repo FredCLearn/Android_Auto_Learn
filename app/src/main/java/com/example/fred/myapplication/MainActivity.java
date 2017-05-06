@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mResetButton;
     private RelativeLayout mRelativeLayout;
 
+
+    //assign view variables
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,16 +48,16 @@ public class MainActivity extends AppCompatActivity {
 
                 mTextViewBottom.setText(person);
                 mRelativeLayout.setBackgroundColor(Color.RED);
-                mTextViewBottom2.setText("is the Best of the Best!!");
+                mTextViewBottom2.setText("Enakshi is ALWAYS the Best of the Best!!");
             }
         };
 
         View.OnClickListener listener2 = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mTextViewBottom.setText("Rimple, Antoine, Unnati, Monika, OR Ankit??");
-                mRelativeLayout.setBackgroundColor(Color.BLACK);
-                mTextViewBottom2.setText("");
+                mTextViewBottom.setText("Rimple, Antoine, Unnati, Monika, Enakshi OR Ankit??");
+                mRelativeLayout.setBackgroundColor(Color.DKGRAY);
+                mTextViewBottom2.setText("Select Button Below to see who is the Best");
             }
         };
 

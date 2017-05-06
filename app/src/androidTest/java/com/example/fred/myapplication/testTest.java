@@ -52,6 +52,8 @@ public class testTest {
                         isDisplayed()));
         appCompatButton3.perform(click());
 
+        Thread.sleep(1500);
+
         ViewInteraction appCompatButton4 = onView(
                 allOf(withId(R.id.actionButton), withText("Click to see who is the Best!"),
                         withParent(allOf(withId(R.id.relativeLayout),
@@ -59,12 +61,10 @@ public class testTest {
                         isDisplayed()));
         appCompatButton4.perform(click());
 
-        ViewInteraction appCompatButton5 = onView(
-                allOf(withId(R.id.actionButton), withText("Click to see who is the Best!"),
-                        withParent(allOf(withId(R.id.relativeLayout),
-                                withParent(withId(android.R.id.content)))),
-                        isDisplayed()));
-        appCompatButton5.perform(click());
+        Thread.sleep(1500);
+
+
+        appCompatButton4.perform(click());
 
     }
 

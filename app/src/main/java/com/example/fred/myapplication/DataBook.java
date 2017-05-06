@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class DataBook {
     //Fields (Member Variables) - Properties about the object
-    private String[] mPerson ={"Rimple", "Antoine", "Monika", "Unnati","Ankit"};
+    private String[] mPerson ={"Rimple", "Antoine", "Monika", "Unnati","Ankit", "Enakshi"};
 
 
     //Methods - Actions the object can take

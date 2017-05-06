@@ -14,7 +14,7 @@ public class DataBook {
 
 
     //Methods - Actions the object can take
-    public String getfact(){
+    public String getname(){
 
         //selects random person
         Random randomNumber1 = new Random();

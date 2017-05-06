@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String person = mDataBook.getfact();
+                String person = mDataBook.getname();
 
                 mTextViewBottom.setText(person);
                 mRelativeLayout.setBackgroundColor(Color.RED);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mTextViewBottom.setText("Rimple, Antoine, Unnati, Monika, Enakshi OR Ankit??");
-                mRelativeLayout.setBackgroundColor(Color.DKGRAY);
+                mRelativeLayout.setBackgroundColor(Color.LTGRAY);
                 mTextViewBottom2.setText("Select Button Below to see who is the Best");
             }
         };
